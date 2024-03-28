@@ -1,0 +1,61 @@
+.my_imag{
+    justify-content: center;
+    display: flex;
+    background-color: yellow;
+}
+.image-section{
+    width: 900px;
+    height: 250px;
+    background-color: yellow;
+}
+
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.video1{
+    width: 100%; 
+    height: auto;
+}
+.video-column {
+    flex: 1;
+    height: 400px; /* Adjust the margin between columns as needed */
+    background-color: yellow; /* Set background color as needed */
+    padding: 5px; /* Adjust the padding inside each column as needed */
+}
+
+.heder{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.bottom-text {
+    text-align: center;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 767px){
+    .my_imag{
+    justify-content: center;
+    display: flex;
+}
+
+.video-section {
+    display: grid;
+    justify-content: space-between;
+    
+}
+
+.video-column {
+    flex: 1;
+    height: 400px; /* Adjust the margin between columns as needed */
+    background-color: yellow; /* Set background color as needed */
+    padding: 5px; /* Adjust the padding inside each column as needed */
+}
+
+
+
+.bottom-text {
+    margin-top: 10px;
+} 
+}
