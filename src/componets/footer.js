@@ -1,7 +1,7 @@
 import React from 'react'
 import '../componets/footer.css' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faWallet, faWater, faForward, faArrowRight, faClockFour, faClock, faLocation, faMapLocation, faMapLocationDot, faLocationArrow, faLocationPin, faLocationPinLock, faLocationCrosshairs, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faArrowRight, faClock, faLocationPin, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube, faFacebook, faWhatsapp, faTwitter, faInstagram,  } from '@fortawesome/free-brands-svg-icons';
 import footerLogo from '../allicons/footerLogo.jpg'
 
