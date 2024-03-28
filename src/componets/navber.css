@@ -8,7 +8,7 @@ ul {
 nav {
   background-color: blue;
 }
-hr{
+.nav-hr{
   border-color: rgba(255, 255, 0, 0.452);
 }
 .dropdown-content::before{
@@ -66,7 +66,7 @@ hr{
   transform: translateY(0); /* Move dropdown upward */
 }
 
-li {
+.nav-li {
   cursor: pointer;
   color: white;
   margin: 25px;
@@ -75,11 +75,11 @@ li {
   transition: color 0.5s; /* Smooth transition for color */
 }
 
-span {
+.span01 {
   width: 1px;
   background-color: yellow;
 }
 
-li:hover {
+.nav-li:hover {
   color: yellow;
 }

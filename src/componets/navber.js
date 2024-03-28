@@ -8,37 +8,37 @@ const Navber = () => {
     <nav>
         <div>
             <ul>
-                <li>Home</li>
-                <span/>
-                <li>Shop</li>
-                <span/>
+                <li className='nav-li'>Home</li>
+                <span className='span01'/>
+                <li className='nav-li'>Shop</li>
+                <span className='span01'/>
                 <div class="dropdown">
-                  <li class="dropbtn">About Us▾</li>
+                  <li class="dropbtn nav-li">About Us▾</li>
                     <div class="dropdown-content">
                         <a href="#">About Us</a>
-                        <hr/>
+                        <hr className='nav-hr'/>
                         <a href="#">About Our Services</a>
                      </div>
                 </div>
-                <span/>
+                <span className='span01'/>
                 <div class="dropdown">
-                  <li class="dropbtn">More▾</li>
+                  <li class="dropbtn nav-li">More▾</li>
                     <div class="dropdown-content">
                         <a href="#">Tyre Size Calculatior</a>
-                        <hr/>
+                        <hr className='nav-hr'/>
                         <a href="#">Blog</a>
-                        <hr/>
+                        <hr className='nav-hr'/>
                         <a href="#">About Tyre sizes</a>
                      </div>
                 </div>
-                <span/>
-                <li>Contact Us</li>
-                <span/>
-                <li>FAQs</li>
-                <span/>
-                <li>Feedback</li>
-                <span/>
-                <li><FontAwesomeIcon icon={faWhatsapp} className='whatsapp-icon' />
+                <span className='span01'/>
+                <li className='nav-li'>Contact Us</li>
+                <span className='span01'/>
+                <li className='nav-li'>FAQs</li>
+                <span className='span01'/>
+                <li className='nav-li'>Feedback</li>
+                <span className='span01'/>
+                <li className='nav-li'><FontAwesomeIcon icon={faWhatsapp} className='whatsapp-icon' />
                    +256 414 236 699 / <FontAwesomeIcon icon={faPhone} className='phone-icon'/>
                    +256 752 236 699
                  </li>
