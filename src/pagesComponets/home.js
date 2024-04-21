@@ -1,10 +1,52 @@
-import React from 'react'
+
 import '../pagesComponets/allCSS/home.css'
 import biglogo from '../allImages/biglogo.jpg'
 import video1 from '../videos/video1.mp4'
 import video2 from '../videos/video2.mp4'
 import video3 from '../videos/video3.mp4'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faWallet, faWater, } from '@fortawesome/free-solid-svg-icons';
+import { faYoutube, faFacebook, faWhatsapp,  } from '@fortawesome/free-brands-svg-icons';
+import  Car  from '../allicons/Car.png';
+import carRepair from '../allicons/carRepair.png'
+import medal from '../allicons/medal.png'
+import BFlogo from '../allImages/BFlogo.jpg'
+import comforserlogo2 from '../allImages/comforserlogo2.jpg'
+import gtlogo from '../allImages/gtlogo.jpg'
+import marcherlogo2 from '../allImages/marcherlogo2.jpg'
+import newBland from '../allImages/newBland.jpg'
+import tc from '../allImages/tc.jpg'
+import comfoser from '../allImages/tyres/comfoser.jpg'
+import React, { useRef, useEffect,useState } from 'react';
+import Shopslid from './shopSlid'
+
+
+
 const Home = () => {
+
+  const imgShopRef = useRef(null);
+  const [scrollPos, setScrollPos] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Scroll the images to the left by 100px every 1 second
+      setScrollPos(prevPos => prevPos + 300);
+    }, 3500);
+
+    // Clear the interval on component unmount to prevent memory leaks
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    if (imgShopRef.current) {
+      imgShopRef.current.scrollTo({
+        left: scrollPos,
+        behavior: 'smooth' // Use smooth scrolling behavior
+      });
+    }
+  }, [scrollPos]);
+
+
   return (
     <>
     {/* first image section with the backgrount of yellow------------- */}
@@ -17,9 +59,7 @@ const Home = () => {
     {/* second section for the videos auto play ------------------*/}
     <div className="video-section">
     <div className="video-column">
-        <video className="video1" controls autoplay muted  loop>
-            <source src={video1} type="video/mp4"/>
-          </video>
+        <video className="video1" src={video1} controls autoplay muted > </video>
         {/* Embed your video here */}
         <div  className="bottom-text"><h2 className="heder" >BFGoodrich <br/></h2><h3>Superior performance, durability, and traction for exceptional driving experiences.</h3></div>
     </div>
@@ -39,7 +79,82 @@ const Home = () => {
         {/* Embed your video here */}
         <div  className="bottom-text"><h2 className="heder" >TECHKING<br/></h2><h3>Cutting-edge technology, robust performance, and dependable traction for all terrains.</h3></div>
     </div>
+  </div>
+  {/* Therd section for qulity---------------------------------------------------- */}
+  <section  class="welcome-area-v2 home4 " >
+    <div class="container">
+        <div class="row">
+            
+            <div  class="col-md-4">
+                <div class="single-item">
+                    <div class="icon-holder">
+                        <span class="flaticon-medal"><img className='holder-icon1' src={medal} alt="Medal Icon" /></span>    
+                    </div>
+                    <div class="text-holder">
+                        <h3>Value For Your Money</h3>
+                        <p>Firm on the ground, fine in your pocket</p></div>
+                </div>
+            </div> 
+            
+            
+            <div class="col-md-4">
+                <div class="single-item">
+                    <div class="icon-holder">
+                        <span class="flaticon-car-wheel"><img className='holder-icon1' src={Car} alt="Medal Icon" /></span>    
+                    </div>
+                    <div class="text-holder">
+                        <h3>HI-Quality Products</h3>
+                        <p> More tough, More traction, More Durability</p>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="col-md-4">
+                <div class="single-item">
+                    <div class="icon-holder">
+                        <span className="flaticon-car-repair"><img className='holder-icon1' src={carRepair} alt="Medal Icon" /></span>    
+                    </div>
+                    <div class="text-holder">
+                        <h3>Safety & Reliability</h3>
+                        <p>The Arrival is as important as the jouney.</p>
+                    </div>
+                </div>
+            </div> 
+            
+    
+        </div>
+    </div>
+</section>
+{/* Fourth section for the bland logos ---------------------------------------------------- */}
+<div className="container1">
+    <div className="column1">
+        <p className='bland-logo-p1' >BRAND PARTNERS </p>
+        <hr/>
+        <p className='bland-logo-p2' >Arrow Centre is a one-stop shop for the world's leading brands of tyres and batteries for all passenger cars, 4x4s, sports utility vehicles and commercial vehicles. The highest quality original brands - tyres such as MICHELIN, BF-Goodrich, TECHKING, MARCHER, Comforser, GT-RADIAL, .</p>
+        <div className="movingContent">
+            
+            <img className='img-bland-logo' src={BFlogo}/>
+            <span> . </span>
+
+            <img className='img-bland-logo' src={comforserlogo2}/>
+            <span> . </span>
+            <img className='img-bland-logo' src={tc}/>
+            <span> . </span>
+            <img className='img-bland-logo' src={marcherlogo2}/>
+            <span> . </span>
+            <img className='img-bland-logo' src={gtlogo}/>
+            <span> . </span>
+            <img className='img-bland-logo'  src={newBland}/>
+            <span> . </span>
+            <img className='img-bland-logo' src={BFlogo}/>
+            
+        </div>
+    </div>
+    
 </div>
+{/*shop section ---------------------------------------- */}
+<Shopslid/>
+
     
     </>
   )

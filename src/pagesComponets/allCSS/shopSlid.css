@@ -1,0 +1,136 @@
+.top{
+    display: block !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    
+    
+    position: relative;
+}
+ .slid-img{
+    width: 100% !important;
+    padding: 10px;
+    margin: 10px;
+    height: 300px !important;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    font-size: 10px !important;
+    
+}
+.slider-container{
+    overflow: hidden;
+    padding: 30px 70px;
+    
+}
+.slick-prev{
+   display: none !important;
+}
+.slick-next{
+    display: none !important;
+}
+.small-shop{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    
+    
+}
+.h2-shop{
+    font-size: 40px;
+    position: relative;
+    
+}
+.h2-shop::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 1px;
+    background: blue;
+    margin-top: 60px; 
+    content: "";
+}
+
+.h2-shop::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 1px;
+    background: blue;
+    margin-top: 65px; 
+    margin-left: 10px;
+    content: "";
+}
+
+.span-shop1{
+    margin-right: 35px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    padding: 17px;
+    transition: 0.7s;
+    background-color: white;
+    
+}
+.span-shop2{
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    padding: 17px;
+    transition: 700ms ease 0s;
+}
+.span-shop1:hover{
+    
+    border-color: rgb(130, 131, 131);
+    border: 1px solid;
+    color: blue;
+}
+.span-shop2:hover{
+    
+    
+    border: 1px solid;
+    color: blue;
+}
+
+  
+  .middle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: blue;
+    border-radius: 20px;
+  }
+  
+  .top:hover .slid-img{
+    opacity: 0.5;
+    height: 260px !important;
+    
+    
+  }
+  
+  .top:hover .middle {
+    opacity: 0.7;
+  }
+  
+  .text {
+    cursor: pointer;
+    color: yellow;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; 
+  }

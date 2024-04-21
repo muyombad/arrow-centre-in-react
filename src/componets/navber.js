@@ -3,17 +3,19 @@ import '../componets/navber.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faWallet, faWater, } from '@fortawesome/free-solid-svg-icons';
 import { faYoutube, faFacebook, faWhatsapp,  } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
+
 const Navber = () => {
   return (
     <nav>
         <div>
             <ul>
-                <li className='nav-li'>Home</li>
+                <Link className='nav-li' to={'/'}>Home</Link>
                 <span className='span01'/>
-                <li className='nav-li'>Shop</li>
+                <Link className='nav-li' to={'/Shop'}>Shop</Link>
                 <span className='span01'/>
                 <div class="dropdown">
-                  <li class="dropbtn nav-li">About Us▾</li>
+                  <li class="dropbtn nav-li" >About Us▾</li>
                     <div class="dropdown-content">
                         <a href="#">About Us</a>
                         <hr className='nav-hr'/>
@@ -32,16 +34,16 @@ const Navber = () => {
                      </div>
                 </div>
                 <span className='span01'/>
-                <li className='nav-li'>Contact Us</li>
+                <Link className='nav-li'>Contact Us</Link>
                 <span className='span01'/>
-                <li className='nav-li'>FAQs</li>
+                <Link className='nav-li'>FAQs</Link>
                 <span className='span01'/>
-                <li className='nav-li'>Feedback</li>
+                <Link className='nav-li'>Feedback</Link>
                 <span className='span01'/>
-                <li className='nav-li'><FontAwesomeIcon icon={faWhatsapp} className='whatsapp-icon' />
+                <Link className='nav-li'><FontAwesomeIcon icon={faWhatsapp} className='whatsapp-icon' />
                    +256 414 236 699 / <FontAwesomeIcon icon={faPhone} className='phone-icon'/>
                    +256 752 236 699
-                 </li>
+                 </Link>
             </ul>
         </div>
     </nav>

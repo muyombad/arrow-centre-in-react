@@ -67,9 +67,10 @@ nav {
 }
 
 .nav-li {
+  text-decoration: none;
   cursor: pointer;
   color: white;
-  margin: 25px;
+  margin: 24px;
   font-size: 20px;
   list-style: none;
   transition: color 0.5s; /* Smooth transition for color */
