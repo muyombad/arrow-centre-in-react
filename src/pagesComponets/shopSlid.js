@@ -1,5 +1,5 @@
 import '../pagesComponets/allCSS/shopSlid.css'
-import React, { Component, useRef } from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import comfoser from '../allImages/tyres/comfoser.jpg'
 import BFGoodrich from '../allImages/tyres/BFGOODRICH.jpg'
@@ -22,6 +22,7 @@ function Shopslid() {
   const previous = () => {
     sliderRef.slickPrev();
   };
+  
   var settings = {
     dots: false,
     infinite: true,
@@ -78,49 +79,49 @@ function Shopslid() {
       >
         
         <div className='top'>
-          <img className='slid-img' src={comfoser}></img>
+          <img className='slid-img' src={comfoser} alt=''></img>
           <h2 style={{alignContent:'center',textAlign:'center' }}>COMFOSER</h2>
           <div class="middle">
              <div className="text"><Link to={'/shop'} style={{color:'yellow'}}><FontAwesomeIcon icon={faEye} /></Link></div>
           </div>
         </div>
         <div className='top'>
-          <img className='slid-img' src={MARCHER}></img>
+          <img className='slid-img' src={MARCHER} alt=''></img>
           <h2 style={{alignContent:'center',textAlign:'center' }}>MARCHER</h2>
           <div class="middle">
              <div className="text"><Link to={'/shop'} style={{color:'yellow'}}><FontAwesomeIcon icon={faEye} /></Link></div>
           </div>
         </div>
         <div className='top'>
-          <img className='slid-img' src={BFGoodrich}></img>
+          <img className='slid-img' src={BFGoodrich} alt=''></img>
           <h2 style={{alignContent:'center',textAlign:'center' }}>BFGOODRICH</h2>
           <div class="middle">
              <div className="text"><Link to={'/shop'} style={{color:'yellow'}}><FontAwesomeIcon icon={faEye} /></Link></div>
           </div>
         </div>
         <div  className='top'>
-          <img className='slid-img' src={GITI}></img>
+          <img className='slid-img' src={GITI} alt=''></img>
           <h2 style={{alignContent:'center',textAlign:'center' }}>TECHKING</h2>
           <div class="middle">
              <div className="text"><Link to={'/shop'} style={{color:'yellow'}}><FontAwesomeIcon icon={faEye} /></Link></div>
           </div>
         </div>
         <div className='top'>
-          <img className='slid-img' src={GTRADIAL}></img>
+          <img className='slid-img' src={GTRADIAL} alt=''></img>
           <h2 style={{alignContent:'center',textAlign:'center' }}>GTRADIAL</h2>
           <div class="middle">
              <div className="text"><Link to={'/shop'} style={{color:'yellow'}}><FontAwesomeIcon icon={faEye} /></Link></div>
           </div>
         </div>
         <div className='top'>
-          <img className='slid-img' src={TECHKING}></img>
+          <img className='slid-img' src={TECHKING} alt=''></img>
           <h2 style={{alignContent:'center',textAlign:'center' }}>TECHKING</h2>
           <div class="middle">
              <div className="text"><Link to={'/shop'} style={{color:'yellow'}}><FontAwesomeIcon icon={faEye} /></Link></div>
           </div>
         </div>
         <div className='top'>
-          <img className='slid-img' src={MICHELIN}></img>
+          <img className='slid-img' src={MICHELIN} alt=''></img>
           <h2 style={{alignContent:'center',textAlign:'center' }}>MICHELIN</h2>
           <div class="middle">
              <div className="text"><Link to={'/shop'} style={{color:'yellow'}}><FontAwesomeIcon icon={faEye} /></Link></div>

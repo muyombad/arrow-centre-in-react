@@ -16,9 +16,13 @@ import gtlogo from '../allImages/gtlogo.jpg'
 import marcherlogo2 from '../allImages/marcherlogo2.jpg'
 import newBland from '../allImages/newBland.jpg'
 import tc from '../allImages/tc.jpg'
+import doc from '../allicons/doc.svg'
 import comfoser from '../allImages/tyres/comfoser.jpg'
 import React, { useRef, useEffect,useState } from 'react';
 import Shopslid from './shopSlid'
+import { ReactComponent as MyIcon } from '../allicons/doc.svg';
+import { Link } from 'react-router-dom'
+import Services from './serviceSection'
 
 
 
@@ -88,7 +92,7 @@ const Home = () => {
             <div  class="col-md-4">
                 <div class="single-item">
                     <div class="icon-holder">
-                        <span class="flaticon-medal"><img className='holder-icon1' src={medal} alt="Medal Icon" /></span>    
+                        <span class="flaticon-medal"></span>    
                     </div>
                     <div class="text-holder">
                         <h3>Value For Your Money</h3>
@@ -100,7 +104,7 @@ const Home = () => {
             <div class="col-md-4">
                 <div class="single-item">
                     <div class="icon-holder">
-                        <span class="flaticon-car-wheel"><img className='holder-icon1' src={Car} alt="Medal Icon" /></span>    
+                        <span class="flaticon-car-wheel"></span>    
                     </div>
                     <div class="text-holder">
                         <h3>HI-Quality Products</h3>
@@ -112,7 +116,7 @@ const Home = () => {
             <div class="col-md-4">
                 <div class="single-item">
                     <div class="icon-holder">
-                        <span className="flaticon-car-repair"><img className='holder-icon1' src={carRepair} alt="Medal Icon" /></span>    
+                        <span className="flaticon-car-repair"></span>    
                     </div>
                     <div class="text-holder">
                         <h3>Safety & Reliability</h3>
@@ -154,8 +158,78 @@ const Home = () => {
 </div>
 {/*shop section ---------------------------------------- */}
 <Shopslid/>
+{/* term of use section */}
 
-    
+<section className="features-area">
+            <div className="container">
+                <div className="row">
+                    {/* Start single features item */}
+                    <div className="feature-item">
+                        <div className="overlay over1" >
+                            <div className="box" >
+                                <div className="box-content">
+                                    <Link to={'/faq'}> Read More</Link>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div className="icon-box">
+                        
+                            <span className="flaticon-document"></span>
+                        </div>
+                        <div className="text-box">
+                            <h3>FAQ</h3>
+                            <p>For the most enjoyable driving experience it’s important to replace worn tires.<br /> Optimum traction helps...</p>
+                        </div>
+                    </div>
+                    {/* End single features item */}
+
+                    {/* Start single features item */}
+                    <div className="feature-item">
+                        <div  className="overlay over2">
+                          
+                            <div className="box" >
+                                <div className="box-content">
+                                    <Link to={'/TermsOfUse'}>Read More</Link>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div className="icon-box">
+                            <span className="flaticon-calendar"></span>
+                            
+                        </div>
+                        <div className="text-box">
+                            <h3>TERMS OF USE</h3>
+                            <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by Arrowcentre...</p>
+                        </div>
+                    </div>
+                    {/* End single features item */}
+
+                    {/* Start single features item */}
+                    <div className="feature-item">
+                        <div className="overlay over3">
+                           
+                            <div className="box" >
+                                <div className="box-content">
+                                    <Link to={'/privacyPolicy'}>Read More</Link>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div className="icon-box">
+                            <span className="flaticon-car-repair"></span>
+                        </div>
+                        <div className="text-box">
+                            <h3>PRIVACY POLICY</h3>
+                            <p>This privacy policy sets out how Arrowcentre uses and protects any information that you provide Arrowcenter with when you...</p>
+                        </div>
+                    </div>
+                    {/* End single features item */}
+                </div>
+            </div>
+        </section>
+        <Services/>
     </>
   )
 }

@@ -2,6 +2,7 @@
     display: block !important;
     overflow: hidden !important;
     width: 100% !important;
+    position: absolute;
     
     
     position: relative;
@@ -16,6 +17,7 @@
     transition: .5s ease;
     backface-visibility: hidden;
     font-size: 10px !important;
+    
     
 }
 .slider-container{

@@ -1,3 +1,5 @@
+@import url(../allCSS/flaticon/flaticon.css);
+
 .my_imag{
     justify-content: center;
     display: flex;
@@ -20,7 +22,7 @@
 }
 .video-column {
     flex: 1;
-    height: 400px; /* Adjust the margin between columns as needed */
+    height: 500px; /* Adjust the margin between columns as needed */
     background-color: yellow; /* Set background color as needed */
     padding: 5px; /* Adjust the padding inside each column as needed */
 }
@@ -94,14 +96,20 @@
   .icon-holder{
     margin-left: auto;
     margin-right: auto;
-    width: 90px;
+    width: 100px;
     margin-bottom: 30px;
-    border-radius: 90px;
+    border-radius: 50px;
     background-color: #f9f9f9;
     color: blue;
     margin-top: -70px;
     transition: 0.6s;
+    font-size: 70px;
+    height: 100px;
   }
+  .icon-holder span::before{
+    font-size: 40px;
+  }
+  
   
 
   .container1 {
@@ -250,5 +258,161 @@
     height: auto;
     padding: 10px;
     
+}
+
+/*------------------term of use section ---------------------------*/
+.features-area {
+    background-color: blue;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feature-item {
+    position: relative;
+    width: 32%;
+    background-color: blue;
+    overflow: hidden;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    
+}
+.over1{
+    background-image: url(/src/allImages/tyres/worn.jpg);
+}
+.over2{
+    background-image: url(/src/allImages/tyres/terms_of_use.webp);
+}
+.over3{
+    background-image: url(/src/allImages/tyres/priacy.jpg);
+}
+.overlay {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    transition: all 0.5s ease;
+    opacity: 0;
+    overflow-y: hidden;
+}
+.overlay::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(31, 33, 34, 0.788);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.feature-item:hover{
+    .overlay{
+        opacity: 1;
+    }
+    .box{
+        margin-top: 230px;
+    }
+    
+    .text-box{
+        top: -30px;
+    }
+    .icon-box{
+        top: 10px;
+    }
+   
+}
+
+.box {
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    padding: 20px;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.box-content a {
+    text-transform: uppercase;
+    background: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 45px;
+    display: inline-block;
+    padding: 0 55px;
+    position: relative;
+    top: 0px;
+    transform: translate3d(0, 45px, 0);
+    transition: all 0.5s ease;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    
+}
+.box-content a:hover{
+background-color: blue;
+}
+
+.icon-box {
+    top: 50px;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 50px;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.5s ease;
+    color: white;
+}
+.icon-box::before{
+    content: "\f100";
+    font-family: Flaticon;
+    font-size: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+}
+.icon-box span::before{
+    font-size: 40px;
+    line-height: 100px;
+    display: block;
+    vertical-align: bottom;
+}
+
+.text-box {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    top: 15px;
+    transition: 0.5s;
+}
+
+.text-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.text-box p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.6;
 }
 

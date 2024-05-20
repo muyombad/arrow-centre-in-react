@@ -1,0 +1,152 @@
+.repair-service-area {
+    padding: 50px 0;
+  }
+  
+  .sec-title {
+    margin-top: -5px;
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .sec-title h1 {
+    color: #222222;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: none;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .sec-title .border {
+    width: 80px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    background: transparent;
+    height: 5px;
+    margin: 11px 0 0;
+  }
+  .sec-title .border::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 1px;
+    background: blue;
+    content: "";
+  }
+  .sec-title .border::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 1px;
+    background: blue;
+    content: "";
+  }
+  .sec-title .border.center {
+    margin: 11px auto 0;
+}
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+  
+  .rounded {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .single-thumb {
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding-left: 110px;
+    padding-bottom: 60px;
+    width: 70%;
+  }
+  
+  .img-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .img-holder img {
+    max-width: 100%;
+    height: auto;
+  }
+ 
+  .overlay-style-one {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    left:0;
+    top:0;
+    width:100%;
+    height:100px;
+    padding:0px;
+    color:#ffffff;
+    background: rgba(35, 53, 136, 0.9);
+    transform: perspective(400px) rotateX(-90deg);
+    transform-origin: top;
+  }
+  .single-thumb:hover .overlay-style-one{
+        transform: none;
+  }
+  .single-thumb:hover h3{
+        color: blue;
+  }
+  .content{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;    
+}
+.boxservice{
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+  
+  .overlay-style-one .box .content a {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .fa-check:before {
+    content: "\f00c";
+    color: white;
+    font-size: 30px;
+}
+  
+  .single-thumb:hover .overlay-style-one {
+    opacity: 1;
+  }
+  
+  .text-holderservice {
+    padding-left: 30px;
+  }
+  
+  .text-holderservice a {
+    text-decoration: none !important;
+    color: #000;
+  }
+  
+  .text-holderservice p {
+    
+    color: #777;
+    line-height: 25px;
+  }
+    
